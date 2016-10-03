@@ -3,10 +3,6 @@ _ = require 'lodash'
 
 api = express.Router()
 
-
-# TODO:
-#  - Add validation to only allow post
-
 ###
 	parsing JSON body
 ###
@@ -26,7 +22,7 @@ api.get '/', (req, res) ->
 	res.send "api root"
 
 ###
-	insert comment here
+	you can extend this
 ###
 api.use '/:library/:method',(req, res, next) ->
 	# req.params contains library, and method
